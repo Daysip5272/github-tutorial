@@ -69,7 +69,9 @@ Github:
 * the type "git add Readme.md" 
   * to add it.
 *  then type "git commit -m “write here a short message that says what you just did or change”
-#### Go back to github.com that is our remote
+*  then type "git push"
+##### Everytime you make a change repeat steps 8 to 11.
+### Go back to github.com that is our remote
 * after you had already make an account
 * go to the top right coner click on the "+" and press New repository
 * give a  Repository name: ""
