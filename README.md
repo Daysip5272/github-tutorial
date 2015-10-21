@@ -53,38 +53,39 @@ Github:
 (go to [c9.io](c9.io))  
 1. go inside the workspace you made     
 2. type `mkdir first-repo`  
- this makes your first folder   
+ * this makes your first folder   
 3. type `cd first-repo` 
- * to get inside that folder  
-4. type `pwd`      
+ * to get inside that folder   
+4.type `pwd`      
   * you should see this _/home/nitrous/github-learning/first-repo_   
   * this also checks where you are.    
-5. `git init`    
+5.  `git init`    
   * start git in our repository (repo) that was our directory for version control (do this only one time)     
-6. `touch README.md`    
+6.  `touch README.md`    
   * makes a new file      
-7. open the README       
+7.   open the README       
   * type anything on it     
-8. save   
+8.   save   
   * if theres a little circle next to the README.md on top press it and save it.     
-9. then type `git add Readme.md`      
+9.    then type `git add Readme.md`      
   * to add it.       
-10.  then type `git commit -m “write here a short message that says what you just did or change”`     
-11.  then type `git push`          
+10.     then type `git commit -m “write here a short message that says what you just did or change”`     
+11.    then type `git push -u original master`  
+(but only one time and after do `git push`)   
   **Everytime you make a change repeat steps 8 to 11.**      
   **_ Go back to github.com that is our remote_**    
-12. after you had already make an account     
-13. go to the top right coner click on the "+" and press New repository    
-14. give a  Repository name: ""    
+12.   after you had already make an account     
+13.   go to the top right coner click on the "+" and press New repository    
+14.   give a  Repository name: ""    
   * the names need to **ALWAYS** match to the name of the folder.    
-15. then press _create repository_      
-16. then check on the box that says "Quick setup" that is click on the SSH.          
-17. then copy line by line the two line that are in the box that says "…or push an ..."        
+15.   then press _create repository_      
+16.   then check on the box that says "Quick setup" that is click on the SSH.          
+17.   then copy line by line the two line that are in the box that says "…or push an ..."        
   * they should look like this            
   `git remote add origin git@github.com:Daysip5272/practice.jjjp.git`        
 `git push -u origin master`     
-17. after coping, paste line by line on the c9 but first make sure your in the folder where you did the changes     
-18. then go back to [github.com](github.com) and refresh the page and you see the changes.     
+18.   after coping, paste line by line on the c9 but first make sure your in the folder where you did the changes     
+19.   then go back to [github.com](github.com) and refresh the page and you see the changes.     
 
 ---
 ## Workflow & Commands
