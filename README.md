@@ -80,7 +80,8 @@ Github:
 15. then press _create repository_
 16. then check on the box that says "Quick setup" that is click on the SSH.    
 17. then copy line by line the two line that are in the box that says "…or push an ..." 
-  * they should look like this `git remote add origin git@github.com:Daysip5272/practice.jjjp.git`   
+  * they should look like this    
+  `git remote add origin git@github.com:Daysip5272/practice.jjjp.git`   
 `git push -u origin master`
 17. after coping, paste line by line on the c9 but first make sure your in the folder where you did the changes
 18. then go back to [github.com](github.com) and refresh the page and you see the changes.
