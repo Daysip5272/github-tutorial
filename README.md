@@ -53,9 +53,9 @@ Github:
 (go to [c9.io](c9.io))  
 1. go inside the workspace you made     
 2. type `mkdir first-repo`  
-   *  this makes your first folder   
+ this makes your first folder   
 3. type `cd first-repo` 
-   * to get inside that folder  
+ * to get inside that folder  
 4. type `pwd`      
   * you should see this _/home/nitrous/github-learning/first-repo_   
   * this also checks where you are.    
@@ -65,8 +65,8 @@ Github:
   * makes a new file      
 7. open the README       
   * type anything on it     
-8. save      
- * if theres a little circle next to the README.md on top press it and save it.     
+8. save   
+  * if theres a little circle next to the README.md on top press it and save it.     
 9. then type `git add Readme.md`      
   * to add it.       
 10.  then type `git commit -m “write here a short message that says what you just did or change”`     
