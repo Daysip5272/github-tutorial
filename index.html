@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>GitHub-tutorial by Daysip5272</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>GitHub-tutorial</h1>
+        <h2>First GitHub Tutorial</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Daysip5272/github-tutorial/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/Daysip5272/github-tutorial/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/Daysip5272/github-tutorial" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Daysi Patino</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>Git: </p>
+
+<ul>
+<li>version of control(snapshot of code)<br>
+</li>
+<li>not required github<br>
+</li>
+<li>runs in command line<br>
+</li>
+<li>you have a directory (folder) of files once we initialize git (, we call it a repository (repo for short)<br>
+</li>
+</ul>
+
+<p>Github:  </p>
+
+<ul>
+<li>store in cloud<br>
+</li>
+<li>visually changes<br>
+</li>
+<li>easily collaborate on files<br>
+</li>
+<li>github.com website<br>
+</li>
+<li>runs in command line<br>
+</li>
+<li>to interact with repositories &amp; visually  see changes between commits<br>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ol>
+<li>Sign Up on <a href="github.com">github.com</a>
+
+<ul>
+<li>on top-right </li>
+<li>profile icon </li>
+<li>settings</li>
+<li>left sidebar </li>
+<li>SSH keys</li>
+</ul>
+</li>
+<li>Go to <a href="c9.io">c9.io</a> open an account with github( a little cat on the top right coner)
+
+<ul>
+<li>create a workspace </li>
+<li>give it a name like (github-learning)and if you want a description</li>
+<li>then press "Create Workspace"</li>
+<li>before getting in the workspace you just made you have to get the SSH keys </li>
+<li>for that you have to be in the page that you go after sign in</li>
+<li>look for the icon on top right (click it)</li>
+<li>then look for the SSH Keys on the middle left (click it)</li>
+<li>then copy the box that said default ssh keys</li>
+</ul>
+</li>
+<li>go back to github SSH Keys 
+
+<ul>
+<li>press the "Add SSH Key"</li>
+<li>as tittle type c9</li>
+<li>then paste the SSH Key that we copy from c9</li>
+<li>the press "Add key</li>
+<li>open the the workspace that you just made </li>
+<li>type "ssh -T <a href="mailto:git@github.com">git@github.com</a>" if you see this "yourname@github-learning"then everything is alright<br>
+<strong>(if you sign in on nitrout then do this if not then don`t)</strong>
+</li>
+<li>then type "git config --global user.name "First Last" "</li>
+<li>also type "git config --global user.email "<a href="mailto:email@hstat.org">email@hstat.org</a>""</li>
+</ul>
+</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>(go to <a href="c9.io">c9.io</a>)<br>
+1. go inside the workspace you made<br>
+2. type <code>mkdir first-repo</code>  </p>
+
+<ul>
+<li>this makes your first folder<br>
+
+<ol>
+<li>type <code>cd first-repo</code> </li>
+</ol>
+</li>
+<li>to get inside that folder<br>
+4.type <code>pwd</code><br>
+
+<ul>
+<li>you should see this <em>/home/nitrous/github-learning/first-repo</em><br>
+</li>
+<li>this also checks where you are.<br>
+</li>
+<li> <code>git init</code><br>
+</li>
+<li>start git in our repository (repo) that was our directory for version control (do this only one time)<br>
+</li>
+<li> <code>touch README.md</code><br>
+</li>
+<li>makes a new file<br>
+</li>
+<li>  open the README<br>
+</li>
+<li>type anything on it<br>
+</li>
+<li>  save<br>
+</li>
+<li>if theres a little circle next to the README.md on top press it and save it.<br>
+</li>
+<li>   then type <code>git add Readme.md</code><br>
+</li>
+<li>to add it.<br>
+</li>
+<li>    then type <code>git commit -m “write here a short message that says what you just did or change”</code><br>
+</li>
+<li>   then type <code>git push -u original master</code><br>
+(but only one time and after do <code>git push</code>)<br>
+<strong>Everytime you make a change repeat steps 8 to 11.</strong><br>
+<strong>_ Go back to github.com that is our remote_</strong><br>
+</li>
+<li>  after you had already make an account<br>
+</li>
+<li>  go to the top right coner click on the "+" and press New repository<br>
+</li>
+<li>  give a  Repository name: ""<br>
+</li>
+<li>the names need to <strong>ALWAYS</strong> match to the name of the folder.<br>
+</li>
+<li>  then press <em>create repository</em><br>
+</li>
+<li>  then check on the box that says "Quick setup" that is click on the SSH.<br>
+</li>
+<li>  then copy line by line the two line that are in the box that says "…or push an ..."<br>
+</li>
+<li>they should look like this<br>
+<code>git remote add origin git@github.com:Daysip5272/practice.jjjp.git</code><br>
+<code>git push -u origin master</code><br>
+</li>
+<li>  after coping, paste line by line on the c9 but first make sure your in the folder where you did the changes<br>
+</li>
+<li>  then go back to <a href="github.com">github.com</a> and refresh the page and you see the changes.<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>git init :<br>
+is a code that is being use only one time to start git in our repository (repo) that was our directory for version control</p>
+
+<p>git status :<br>
+is a command that helps you see what was been edited since the last commit and also that give you advice on what to do if your stuck. It will show up on color red.</p>
+
+<p>git add file.ext :<br>
+is an adding code that add the files to be committed to the stage.</p>
+
+<p>git status :<br>
+the command to see the commitment file on stage. It will show green is you done the command before. </p>
+
+<p>git commit -m "shortmessage":<br>
+It take a picture and give it a name. </p>
+
+<p>git push:<br>
+it send the changes up to the cloud that is hub.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
